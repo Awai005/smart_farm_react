@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; /* Light green */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .node-visualizer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    text-align: center;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #2e7d32; /* Leaf green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #1b5e20; /* Darker green for active tab */
+  }
+  
+  .tab:hover {
+    background-color: #1b5e20;
+  }
+  
+  .table-container {
+    overflow-x: auto; /* Adds horizontal scrolling for small screens */
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%; /* Ensures the table takes up the full width */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; /* Prevents content from wrapping */
+  }
+  
+  th {
+    background-color: #2e7d32; /* Leaf green */
+    color: white;
+  }
+  
+  @media (max-width: 768px) { /* For tablets and smaller devices */
+    th, td {
+      font-size: 12px; /* Reduce font size for smaller screens */
+      padding: 6px; /* Reduce padding for compact display */
+    }
+  
+    table {
+      font-size: 12px; /* Overall smaller table text */
+    }
+  }
+  
+  @media (max-width: 480px) { /* For mobile devices */
+    th, td {
+      font-size: 10px; /* Further reduce font size for small screens */
+      padding: 4px; /* Compact padding */
+    }
+  }
+  
+  
+  .tank-container {
+    margin: 10px auto; /* Reduced margin */
+    padding: 10px; /* Reduced padding */
+    background: #f9fbe7; /* Lighter green for distinction */
+    border: 1px solid #c8e6c9; /* Subtle border */
+    border-radius: 5px; /* Smaller radius */
+    display: inline-block; /* Makes the section compact */
+    text-align: left;
+  }
+  
+  .tank-status {
+    font-size: 14px; /* Smaller text size */
+    line-height: 1.4; /* Adjust line spacing */
+    color: #2e7d32; /* Leaf green text color */
+    margin: 0;
+  }
+  
+  .tank-status p {
+    margin: 2px 0; /* Reduced space between lines */
+  }
+  
+  h3 {
+    font-size: 16px; /* Smaller header */
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  

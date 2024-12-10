@@ -1,0 +1,42 @@
+.home-page {
+  height: 100vh; /* Full viewport height */
+  background-image: url("../assets/homepage.jpg"); /* Adjust path to your image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Ensure text is visible on the background */
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.15); /* Semi-transparent background with 25% opacity */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #2e7d32; /* Leaf green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b5e20; /* Darker green */
+}
