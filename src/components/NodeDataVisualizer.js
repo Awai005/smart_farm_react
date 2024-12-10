@@ -4,7 +4,7 @@ import "./NodeDataVisualizer.css";
 
 const NodeDataVisualizer = () => {
   const [nodeData, setNodeData] = useState({ 1: [], 2: [] });
-  const [tankData, setTankData] = useState({ 1: "Water Volume Low", 2: "Water volume Low" });
+  const [tankData, setTankData] = useState({ 1: "Tank_status", 2: "Tank_status" });
   const [activeTab, setActiveTab] = useState(1);
   const [error, setError] = useState("");
 
@@ -35,10 +35,10 @@ const NodeDataVisualizer = () => {
           },
         }));
       } else {
-        setTankData((prevData) => ({ ...prevData, [nodeId]: "Tank_status" }));
+        setTankData((prevData) => ({ ...prevData, [nodeId]: "Tank node seems to be offline" }));
       }
     } catch {
-      setTankData((prevData) => ({ ...prevData, [nodeId]: "Tank_status" }));
+      setTankData((prevData) => ({ ...prevData, [nodeId]: "Tank node seems to be offline" }));
     }
   };
 
