@@ -25,7 +25,7 @@ const SetThreshold = () => {
 
     try {
       const response = await axios.post(
-        `https://8ad1-124-111-21-208.ngrok-free.app/set_threshold/${nodeId}`,
+        `https://smart-farm-v14p.onrender.com/set_threshold/${nodeId}`,
         { threshold: parseInt(threshold, 10) }
       );
 
