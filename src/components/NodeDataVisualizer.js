@@ -11,7 +11,7 @@ const NodeDataVisualizer = () => {
   const fetchNodeData = async (nodeId) => {
     setError("");
     try {
-      const response = await axios.get(`https://8ad1-124-111-21-208.ngrok-free.app/node_data/${nodeId}`);
+      const response = await axios.get(`https://smart-farm-v14p.onrender.com/get_node_data/${nodeId}`);
       if (response.status === 200 && response.data.status === "success") {
         setNodeData((prevData) => ({ ...prevData, [nodeId]: response.data.data }));
       } else {
@@ -25,7 +25,7 @@ const NodeDataVisualizer = () => {
   const fetchTankData = async (nodeId) => {
     setError("");
     try {
-      const response = await axios.get(`https://8ad1-124-111-21-208.ngrok-free.app/tank_data/${nodeId}`);
+      const response = await axios.get(`https://smart-farm-v14p.onrender.com/tank_data/${nodeId}`);
       if (response.status === 200) {
         setTankData((prevData) => ({
           ...prevData,
